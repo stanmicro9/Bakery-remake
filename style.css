@@ -1,0 +1,245 @@
+body {
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+.demo-panel-menu {
+    position: fixed;
+    right: 0;
+    top: 30%;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 40px; /* Initial width */
+    transition: width 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.demo-panel-menu:hover {
+    width: 120px; /* Width when hovered */
+}
+
+.demo-panel-menu div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.demo-panel-menu img {
+    margin-right: 5px;
+    width: 20px; /* Adjust image size */
+    height: 20px;
+}
+
+.demo-panel-menu span {
+    display: none;
+    font-size: 12px; /* Adjust text size */
+}
+
+.demo-panel-menu div:hover span {
+    display: inline;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.home {
+    background-image: url('images/drew-coffman-1872.jpg');
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+
+.intil-background {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.vh-100 {
+    height: 100vh !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.home button {
+    margin-right: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.learn-more {
+    border: none;
+}
+.contact-us {
+    border: none;
+}
+.bgMain {
+    background-color: #8f754f !important;
+}
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+.text-center {
+    text-align: center !important;
+}
+
+button {
+    font-family: 'Alegreya Sans', serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h2 {
+    font-family: 'Alegreya', serif, monospace;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(48, 48, 48);
+    font-size: 37px;
+    line-height: 44px;
+}
+
+li{
+    font-family: 'Alegreya Sans', serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+p {
+    font-family: 'Alegreya Sans', serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h4 {
+    font-family: 'Alegreya', serif, monospace;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.navbar {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.navbar-custom {
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+  
+  .scrolled {
+    background-color: white;
+  }
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.container {
+    max-width: 720px;
+}
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.styles {
+    width: 50%;
+}
+
+#about,
+#about * {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.member {
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.fs-1 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+}
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+.bg-sec {
+    background-color: #403d38;
+}
+.text-md-start {
+    text-align: left !important;
+}
+.text-white-50 {
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, .5) !important;
+}
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.custome-border {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.hover-white {
+    transition: all .5s ease;
+}
+
+.footer {
+    background-color: #353330;
+}
+.footer .social li {
+    color:  #8f754f;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+}
+.fa-2x {
+    font-size: 2em;
+}
+
+
