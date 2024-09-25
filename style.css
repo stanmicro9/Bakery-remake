@@ -93,6 +93,13 @@ h4 {
     background-repeat: no-repeat;
     height: 100vh; /*setting the height to full viewport height*/
 }
+@media (max-width: 767px) {
+    .home {
+        background-size: contain;
+        background-position: center;
+        height: auto;
+    }
+}
 
 .align-items-center {
     align-items: center !important;
