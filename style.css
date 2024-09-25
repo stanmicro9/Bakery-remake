@@ -2,6 +2,51 @@ body {
     background-color: #FFFFFF;
     overflow-x: hidden;
 }
+h1 {
+    font-family: 'Alegreya', serif, monospace;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255,255,255);
+    font-size: 80px;
+    line-height: 96px;
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*optional for depth*/
+}
+h2 {
+    font-family: 'Alegreya', serif, monospace;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(48,48,48);
+    font-size: 40px;
+    line-height: 48px;
+}
+
+
+li{
+    font-family: 'Alegreya Sans', serif, monospace;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    font-size: 13px;
+    line-height: 20px;
+}
+
+p {
+    font-family: 'Alegreya Sans', serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    line-height: 24px;
+}
+h4 {
+    font-family: 'Alegreya', serif, monospace;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    font-size: 24px;
+    line-height: 29px;
+}
+/*demo panel menu*/
 .demo-panel-menu {
     position: fixed;
     right: 0;
@@ -11,11 +56,11 @@ body {
     padding: 5px;
     width: 40px; /* Initial width */
     transition: width 0.3s;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
 }
 
 .demo-panel-menu:hover {
-    width: 120px; /* Width when hovered */
+    width: 120px;
 }
 
 .demo-panel-menu div {
@@ -26,20 +71,21 @@ body {
 
 .demo-panel-menu img {
     margin-right: 5px;
-    width: 20px; /* Adjust image size */
+    width: 20px;
     height: 20px;
 }
 
 .demo-panel-menu span {
     display: none;
-    font-size: 12px; /* Adjust text size */
+    font-size: 16px; 
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .demo-panel-menu div:hover span {
     display: inline;
     font-family: 'Alegreya Sans', sans-serif;
 }
-
 .home {
     background-image: url('images/drew-coffman-1872.jpg');
 }
@@ -67,85 +113,169 @@ body {
 .d-flex {
     display: flex !important;
 }
-
+/*home*/
 .home button {
     margin-right: 5px;
     padding: 15px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
-.learn-more {
-    border: none;
-}
-.contact-us {
-    border: none;
-}
-.bgMain {
-    background-color: #8f754f !important;
-}
-.text-white {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
-}
-.text-center {
-    text-align: center !important;
-}
-
 button {
     font-family: 'Alegreya Sans', serif, monospace;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     color: rgb(48, 48, 48);
     font-size: 16px;
     line-height: 24px;
+    border: 1px solid transparent;
 }
 
-h2 {
-    font-family: 'Alegreya', serif, monospace;
-    font-style: normal;
-    font-weight: 500;
-    color: rgb(48, 48, 48);
-    font-size: 37px;
-    line-height: 44px;
+.learn-more{
+    border: none;
+}
+.contact-us{
+    background-color: transparent !important;
+    border: 0.8px solid white;
+}
+.bgMain {
+    background-color: #8f754f;
+}
+.learn-more:hover, 
+.contact-us:hover{
+    background-color: #fff !important;
+    color: rgb(48, 48, 48) !important;
+}
+.hover-white{
+    transition:  all 0.5s ease;
+}
+.hover-white:hover{
+    color: #fff !important;
 }
 
-li{
+
+/*pointer animations*/
+.pointer{
+    width: 30px;
+    height: 50px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.pointer span{
+    height: 8px;
+    width: 8px;
+    top: 1px;
+    animation-name: moveTobottom; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes moveTobottom {
+    0%{
+        opacity: 0;
+        top: 10%;
+    }
+    50%{
+        opacity: 1;
+        top: 50%;
+    }
+    100%{
+        opacity: 0;
+        top: 80%;
+    }
+}
+.text-center {
+    text-align: center !important;
+    
+}
+.section11 {
     font-family: 'Alegreya Sans', serif, monospace;
     font-style: normal;
     font-weight: 400;
-    color: rgb(102, 102, 102);
-    font-size: 16px;
-    line-height: 24px;
+    color: rgb(255,255,255,0.5);
+    font-size: 28px;
+    line-height: 52px;
 }
-
-p {
+.section12 {
     font-family: 'Alegreya Sans', serif, monospace;
     font-style: normal;
     font-weight: 400;
-    color: rgb(102, 102, 102);
-    font-size: 16px;
-    line-height: 24px;
+    color: rgb(255,255,255,0.5);
+    font-size: 24px;
+    line-height: 45px;
 }
 
-h4 {
-    font-family: 'Alegreya', serif, monospace;
-    font-style: normal;
-    font-weight: 500;
-    color: rgb(102, 102, 102);
-    font-size: 23px;
-    line-height: 28px;
-}
-
+/*navbar*/
 .navbar {
-    padding: 25px 0;
+    padding: 25px 0 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
+    z-index: 1100;
+}
+.navbar .logo{
+    width: 15%;
+}
+.navbar .navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+.nav-item .nav-link{
+    padding: 9.162px 15px;
+}
+.nav-link {
+    color: #FFFFFF;
+    padding: 9.162px 15px;
+}
+
+/*Navbar mediaquery*/
+@media screen and (max-width: 767px){
+    .navbar .logo{
+        width: 120px;
+    }
+    /*changing color for mobile navbar links*/
+    .navbar-nav .nav-link {
+        color: #303030;
+    }
+}
+@media screen and (max-width: 991px) {
+    .navbar a{
+        padding-top: 1%  !important;
+        padding-bottom: 1%  !important;
+        color: #303030 !important;
+    }
+    .in {
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #8f754f !important;
+    }
+    .navbar-nav .nav-item:first-child .nav-link {
+        color: #8f754f !important; /*gold color for home button*/
+    }
+}
+
+/*custom colors for navbar links*/
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+.scrolled .navbar-nav .nav-link {
+    color: #303030; /*color for items other than home when scrolled*/
+}
+.navbar-nav .nav-link:hover {
+    color: #8f754f;
+}
+
+.navbar-nav .nav-item:first-child .nav-link {
+    color: #8f754f; /*gold color for home button*/
 }
 
 .navbar-custom {
     background-color: transparent;
     transition: background-color 0.3s;
+    z-index: 1030;
   }
   
   .scrolled {
@@ -162,6 +292,8 @@ h4 {
 
 .container {
     max-width: 720px;
+    margin: 0 71.2px;
+    padding: 0 12px;
 }
 .py-5 {
     padding-top: 3rem !important;
@@ -225,7 +357,7 @@ h4 {
 .hover-white {
     transition: all .5s ease;
 }
-
+/*footer*/
 .footer {
     background-color: #353330;
 }
@@ -233,7 +365,24 @@ h4 {
     color:  #8f754f;
     cursor: pointer;
     transition: all .5s ease;
+    list-style: none;
 }
+.footer .social li:hover{
+    transform: scale(1.1);
+}
+#f:hover{
+    color: #4267B2
+}
+#g:hover{
+    color: #db4a39
+}
+#l:hover{
+    color: #0072b1;
+}
+#t:hover{
+    color: #00acee;
+}
+
 .fa-brands, .fab {
     font-family: "Font Awesome 6 Brands";
     font-weight: 400;
@@ -241,5 +390,3 @@ h4 {
 .fa-2x {
     font-size: 2em;
 }
-
-
