@@ -88,16 +88,17 @@ h4 {
 }
 .home {
     background-image: url('images/drew-coffman-1872.jpg');
-    background-size: cover; /*ensuring the image covers the entire element*/
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /*setting the height to full viewport height*/
+    height: 100vh; /*keeping it full screen*/
 }
+
+/*mobile specific adjustments*/
 @media (max-width: 767px) {
     .home {
         background-size: contain;
-        background-position: center;
-        height: auto;
+        height: 80vh;
     }
 }
 
